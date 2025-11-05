@@ -1,6 +1,6 @@
-import {__esmMin as e} from "./rolldown-runtime.DvaNjN55.mjs";
-import {B as t, Ga as n, X as r, Z as i, d as a, init_client as o, init_npm_react_18_2 as s, init_npm_react_dom_18_2 as c, init_ssg_sandbox_shims as l, navigator as u, pe as d, r as f, te as p, ue as m, window as h, x as g, ye as _} from "./react.D_-swqe5.mjs";
-import {ErrorPlaceholder as v, GracefullyDegradingErrorBoundary as y, LibraryFeaturesProvider as b, PageEffectsProvider as x, PageRoot as S, inferInitialRouteFromPath as C, init_framer_7VXLDRS7 as w, installFlexboxGapWorkaroundIfNeeded as T, lazy as E, markHydrationStart as D, patchRoutesForABTesting as O, removeHiddenBreakpointLayersV2 as k, turnOffReactEventHandling as A, useCurrentRoute as j, useLocaleInfo as M, useRouter as N, withPerformanceMarks as P, yieldToMain as F} from "./framer.CzEyK_8J.mjs";
+import {__esmMin as e} from "./rolldown-runtime.DynScBln.mjs";
+import {B as t, Ga as n, X as r, Z as i, d as a, init_client as o, init_npm_react_18_2 as s, init_npm_react_dom_18_2 as c, init_ssg_sandbox_shims as l, navigator as u, pe as d, r as f, te as p, ue as m, window as h, x as g, ye as _} from "./react.lkV_lvYc.mjs";
+import {ErrorPlaceholder as v, GracefullyDegradingErrorBoundary as y, LibraryFeaturesProvider as b, PageEffectsProvider as x, PageRoot as S, inferInitialRouteFromPath as C, init_framer_7VXLDRS7 as w, installFlexboxGapWorkaroundIfNeeded as T, lazy as E, markHydrationStart as D, patchRoutesForABTesting as O, removeHiddenBreakpointLayersV2 as k, turnOffReactEventHandling as A, useCurrentRoute as j, useLocaleInfo as M, useRouter as N, withPerformanceMarks as P, yieldToMain as F} from "./framer.B9xl_8nV.mjs";
 async function I({routeId: e, pathVariables: i, localeId: a}) {
     let o = z[e].page.preload()
       , s = t(S, {
@@ -10,7 +10,7 @@ async function I({routeId: e, pathVariables: i, localeId: a}) {
         routes: z,
         collectionUtils: V,
         framerSiteId: H,
-        notFoundPage: E( () => import(`./FdvU4kD2VnvheO652h76OmElLoZvCYUcqX3t0UDQ6Ho.CncPVTZN.mjs`)),
+        notFoundPage: E( () => import(`./FdvU4kD2VnvheO652h76OmElLoZvCYUcqX3t0UDQ6Ho.DL4Fu7wU.mjs`)),
         isReducedMotion: void 0,
         localeId: a,
         locales: B,
@@ -196,28 +196,38 @@ e(( () => {
     z = {
         kY9xcxt8P: {
             elements: {},
-            page: E( () => import(`./7xGvqVTq6WfbVcoilsQAmi0T8Erp7ltAiW53X6KVM-I.C7hDu_xg.mjs`)),
+            page: E( () => import(`./7xGvqVTq6WfbVcoilsQAmi0T8Erp7ltAiW53X6KVM-I.BhJ8IWF-.mjs`)),
             path: `/`
         },
         augiA20Il: {
             elements: {},
-            page: E( () => import(`./JdVo-qU7AWH5qGE-H-mEmRHlCN5gP56YsAyK-KWJMXA.BiXKUvrn.mjs`)),
+            page: E( () => import(`./JdVo-qU7AWH5qGE-H-mEmRHlCN5gP56YsAyK-KWJMXA.tTKjxrKc.mjs`)),
             path: `/brandbook`
         },
         vE96AMUlv: {
             elements: {},
-            page: E( () => import(`./6QyQFytrVspyLz0PRFqXB03PYuIt7oGEqaVsv9GuUZE.CRvOxDfd.mjs`)),
+            page: E( () => import(`./6QyQFytrVspyLz0PRFqXB03PYuIt7oGEqaVsv9GuUZE.DeCvap_7.mjs`)),
             path: `/socials`
         },
         DlSe5474U: {
             elements: {},
-            page: E( () => import(`./Wn8mm50i61PXtbvIOiNBeSDtuVejaiPwU44WvgicPxg.Ce_LrOgX.mjs`)),
+            page: E( () => import(`./Wn8mm50i61PXtbvIOiNBeSDtuVejaiPwU44WvgicPxg.VX6B8BPZ.mjs`)),
             path: `/otherside`
         },
         J2X8SdeDe: {
             elements: {},
-            page: E( () => import(`./FdvU4kD2VnvheO652h76OmElLoZvCYUcqX3t0UDQ6Ho.CncPVTZN.mjs`)),
+            page: E( () => import(`./FdvU4kD2VnvheO652h76OmElLoZvCYUcqX3t0UDQ6Ho.DL4Fu7wU.mjs`)),
             path: `/404`
+        },
+        vuQbse1Xg: {
+            elements: {},
+            page: E( () => import(`./j0K39-o9xVzESPnwY-UUQNkGCTUQvzoKwNm_SnsQoAg.DKhvhRmt.mjs`)),
+            path: `/answer`
+        },
+        wGSKRChAG: {
+            elements: {},
+            page: E( () => import(`./35TJF_S7Bq5Y3xm8MDzrBCTguYzQvApCT2sxuztsCrA.D3B5ArAJ.mjs`)),
+            path: `/kyoto`
         }
     },
     B = [{
@@ -242,4 +252,4 @@ e(( () => {
 }
 ))();
 export {I as getPageRoot};
-//# sourceMappingURL=script_main.X5CMgb50.mjs.map
+//# sourceMappingURL=script_main.CfgGUrV_.mjs.map

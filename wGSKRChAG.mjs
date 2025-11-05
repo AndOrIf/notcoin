@@ -1,22 +1,25 @@
-import {__esmMin as e} from "./rolldown-runtime.DvaNjN55.mjs";
-import {init_siteMetadata as t, metadata as n} from "./shared-lib.DQxrY3AA.mjs";
+import {__esmMin as e} from "./rolldown-runtime.DynScBln.mjs";
+import {init_siteMetadata as t, metadata as n} from "./shared-lib.DOgu9Tog.mjs";
 function r(e, t) {
     return {
         breakpoints: [{
-            hash: `dz44m5`,
+            hash: `dpaout`,
             mediaQuery: `(min-width: 1200px)`
         }, {
-            hash: `1vc0yuw`,
+            hash: `t77e9k`,
             mediaQuery: `(min-width: 810px) and (max-width: 1199.98px)`
         }, {
-            hash: `1crqt70`,
+            hash: `1m1bmed`,
             mediaQuery: `(max-width: 809.98px)`
         }],
         description: n(e, t).description,
         elements: {},
-        robots: `max-image-preview:large`,
-        serializationId: `framer-dnObC`,
-        title: n(e, t).title || `Home`,
+        framerSearch: {
+            index: !1
+        },
+        robots: `noindex`,
+        serializationId: `framer-zF2cX`,
+        title: n(e, t).title || `Kyoto`,
         viewport: `width=device-width`
     }
 }
@@ -25,14 +28,14 @@ var i, a, o = e(( () => {
     i = 1,
     a = {
         exports: {
-            metadataVersion: {
-                type: `variable`,
+            default: {
+                type: `function`,
                 annotations: {
                     framerContractVersion: `1`
                 }
             },
-            default: {
-                type: `function`,
+            metadataVersion: {
+                type: `variable`,
                 annotations: {
                     framerContractVersion: `1`
                 }
@@ -44,5 +47,5 @@ var i, a, o = e(( () => {
     }
 }
 ));
-export {a as __FramerMetadata__, o as init_kY9xcxt8P, r as metadata, i as metadataVersion};
-//# sourceMappingURL=kY9xcxt8P.VTKATQO1.mjs.map
+export {a as __FramerMetadata__, o as init_wGSKRChAG, r as metadata, i as metadataVersion};
+//# sourceMappingURL=wGSKRChAG.BqI3UHKf.mjs.map

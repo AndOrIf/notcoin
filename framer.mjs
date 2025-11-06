@@ -6700,7 +6700,7 @@ function ed(e, t) {
                     index: n,
                     projectDuplicate: !0
                 };
-            if (r && r.selector === t.selector && r.weight === t.weight && r.style === t.style)
+            if (r && r.selector === t.selector)
                 return {
                     existingFont: r,
                     index: n,
@@ -18928,12 +18928,12 @@ ${Vl(e)}`);
             P(this, `name`, `builtIn`),
             P(this, `fontFamilies`, []),
             P(this, `byFamilyName`, new Map),
-            P(this, `assetsByFamily`, new Map)
+            P(this, `assetByKey`, new Map)
         }
         importFonts(e) {
             this.fontFamilies.length = 0,
             this.byFamilyName.clear(),
-            this.assetsByFamily.clear();
+            this.assetByKey.clear();
             let t = [];
             for (let n of e) {
                 if (!this.isValidBuiltInFont(n))
@@ -18947,6 +18947,7 @@ ${Vl(e)}`);
                   , c = s ? `variable` : e.font.fontSubFamily || `regular`
                   , l = Lu(n)
                   , u = {
+                    assetKey: n.key,
                     family: i,
                     selector: this.createSelector(r, c, e.font.fontVersion),
                     variant: c,
@@ -18959,7 +18960,7 @@ ${Vl(e)}`);
                     cssFamilyName: Ru(r, s)
                 };
                 i.fonts.push(u),
-                this.assetsByFamily.set(r, n),
+                this.assetByKey.set(n.key, n),
                 t.push(u)
             }
             for (let e of this.fontFamilies)
@@ -19006,7 +19007,8 @@ ${Vl(e)}`);
             i
         }
         getOpenTypeFeatures(e) {
-            let t = this.assetsByFamily.get(e)
+            z(e.assetKey, `Font must have an asset key`);
+            let t = this.assetByKey.get(e.assetKey)
               , n = t?.properties?.font?.openTypeData;
             return Bu(n) ? n?.map(e => {
                 if (Hu(e))
@@ -19113,12 +19115,12 @@ ${Vl(e)}`);
             P(this, `name`, `custom`),
             P(this, `fontFamilies`, []),
             P(this, `byFamilyName`, new Map),
-            P(this, `assetsByFamily`, new Map)
+            P(this, `assetsByKey`, new Map)
         }
         deprecatedImportFonts(t) {
             this.fontFamilies.length = 0,
             this.byFamilyName.clear(),
-            this.assetsByFamily.clear();
+            this.assetsByKey.clear();
             let n = [];
             for (let r of t) {
                 if (!this.isValidCustomFontAsset(r))
@@ -19151,7 +19153,7 @@ ${Vl(e)}`);
                     }
                 };
                 o.fonts.push(m),
-                this.assetsByFamily.set(a, r),
+                this.assetsByKey.set(r.key, r),
                 n.push(...o.fonts)
             }
             return n
@@ -19161,7 +19163,7 @@ ${Vl(e)}`);
                 return this.deprecatedImportFonts(t);
             this.fontFamilies.length = 0,
             this.byFamilyName.clear(),
-            this.assetsByFamily.clear();
+            this.assetsByKey.clear();
             let r = {};
             for (let n of t) {
                 if (!this.isValidCustomFontAsset(n))
@@ -19209,8 +19211,7 @@ ${Vl(e)}`);
                 } else
                     m.fonts.push(g),
                     r[h] = g;
-                m.owner = d,
-                this.assetsByFamily.set(t, n)
+                this.assetsByKey.set(n.key, n)
             }
             for (let e of this.fontFamilies)
                 e.fonts.length > 0 && id(e);
@@ -19230,7 +19231,8 @@ ${Vl(e)}`);
             return !e.mimeType.startsWith(`font/`) || e.properties?.kind !== `font` || !e.properties.font ? !1 : `fontFamily`in e.properties.font
         }
         getOpenTypeFeatures(e) {
-            let t = this.assetsByFamily.get(e)
+            z(e.assetKey, `Font must have an asset key`);
+            let t = this.assetsByKey.get(e.assetKey)
               , n = t?.properties?.font?.openTypeData;
             return Bu(n) ? n?.map(e => {
                 if (Hu(e))
@@ -19386,7 +19388,7 @@ ${Vl(e)}`);
         }
         async getOpenTypeFeatures(t) {
             let n = await sd(`fontshare`)
-              , r = e.createMetadataSelector(t);
+              , r = e.createMetadataSelector(t.family.name);
             return n[r]
         }
     }
@@ -19468,7 +19470,7 @@ ${Vl(e)}`);
         }
         async getOpenTypeFeatures(t) {
             let n = await sd(`framer`)
-              , r = e.createMetadataSelector(t);
+              , r = e.createMetadataSelector(t.family.name);
             return n[r]
         }
     }
@@ -19592,7 +19594,7 @@ ${Vl(e)}`);
         }
         async getOpenTypeFeatures(t) {
             let n = await sd(`google`)
-              , r = e.createMetadataSelector(t);
+              , r = e.createMetadataSelector(t.family.name);
             return n[r]
         }
     }
@@ -20383,5 +20385,5 @@ ${Vl(e)}`);
     }
 }
 ));
-export {K_ as ComponentViewportProvider, iv as Container, Wm as ControlType, Ur as ErrorPlaceholder, b_ as GeneratedComponentContext, Tv as GracefullyDegradingErrorBoundary, lS as Image3, $h as LibraryFeaturesProvider, Vv as Link, zt as PageEffectsProvider, Cc as PageRoot, P_ as PropertyOverrides2, Rb as QueryEngine, q as RenderTarget, py as ResolveLinks, wS as RichText, av as SmartComponentScopedContainer, df as addFonts, Ai as addPropertyControls, Bb as cmsDataCollector, Hh as combinedCSSRulesForPreview, D_ as cssCollector, Po as cx, iS as fontStore, H_ as framerAppearAnimationScriptKey, z_ as framerAppearEffects, V_ as framerAppearIdKey, B_ as framerAppearTransformTemplateToken, w_ as framerCSSMarker, ff as getFonts, pf as getFontsFromSharedStyle, uf as getLoadingLazyAtYPosition, ji as getPropertyControls, nu as getWhereExpressionFromPathVariables, jn as inferInitialRouteFromPath, NS as init_framer_7VXLDRS7, vi as installFlexboxGapWorkaroundIfNeeded, He as lazy, Cn as markHydrationStart, gv as nestedLinksCollector, Bn as patchRoutesForABTesting, Ql as removeHiddenBreakpointLayersV2, kS as sharedSVGManager, yn as turnOffReactEventHandling, Wl as useActiveVariantCallback, Go as useComponentViewport, at as useCurrentRoute, _s as useCustomCursors, Jl as useHydratedBreakpointVariants, Va as useIsInCurrentNavigationTarget, bs as useIsOnFramerCanvas, vn as useLocaleInfo, Gn as useMetadata, rt as useRouter, gu as useVariantState, T_ as withCSS, xf as withPerformanceMarks, Tt as yieldToMain};
-//# sourceMappingURL=framer.B9xl_8nV.mjs.map
+export {K_ as ComponentViewportProvider, iv as Container, Wm as ControlType, Ur as ErrorPlaceholder, b_ as GeneratedComponentContext, Tv as GracefullyDegradingErrorBoundary, lS as Image3, $h as LibraryFeaturesProvider, Vv as Link, zt as PageEffectsProvider, Cc as PageRoot, P_ as PropertyOverrides2, Rb as QueryEngine, q as RenderTarget, py as ResolveLinks, wS as RichText, av as SmartComponentScopedContainer, df as addFonts, Ai as addPropertyControls, Bb as cmsDataCollector, Hh as combinedCSSRulesForPreview, D_ as cssCollector, Po as cx, iS as fontStore, H_ as framerAppearAnimationScriptKey, z_ as framerAppearEffects, V_ as framerAppearIdKey, B_ as framerAppearTransformTemplateToken, w_ as framerCSSMarker, ff as getFonts, pf as getFontsFromSharedStyle, uf as getLoadingLazyAtYPosition, ji as getPropertyControls, nu as getWhereExpressionFromPathVariables, jn as inferInitialRouteFromPath, NS as init_framer_BEVHCO6E, vi as installFlexboxGapWorkaroundIfNeeded, He as lazy, Cn as markHydrationStart, gv as nestedLinksCollector, Bn as patchRoutesForABTesting, Ql as removeHiddenBreakpointLayersV2, kS as sharedSVGManager, yn as turnOffReactEventHandling, Wl as useActiveVariantCallback, Go as useComponentViewport, at as useCurrentRoute, _s as useCustomCursors, Jl as useHydratedBreakpointVariants, Va as useIsInCurrentNavigationTarget, bs as useIsOnFramerCanvas, vn as useLocaleInfo, Gn as useMetadata, rt as useRouter, gu as useVariantState, T_ as withCSS, xf as withPerformanceMarks, Tt as yieldToMain};
+//# sourceMappingURL=framer.BBkeV5vw.mjs.map

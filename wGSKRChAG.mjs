@@ -1,5 +1,5 @@
 import {__esmMin as e} from "./rolldown-runtime.DynScBln.mjs";
-import {init_siteMetadata as t, metadata as n} from "./shared-lib.DOgu9Tog.mjs";
+import {init_siteMetadata as t, metadata as n} from "./shared-lib.Dvpi25Qn.mjs";
 function r(e, t) {
     return {
         breakpoints: [{
@@ -18,7 +18,7 @@ function r(e, t) {
             index: !1
         },
         robots: `noindex`,
-        serializationId: `framer-zF2cX`,
+        serializationId: `framer-XtMR5`,
         title: n(e, t).title || `Kyoto`,
         viewport: `width=device-width`
     }
@@ -48,4 +48,4 @@ var i, a, o = e(( () => {
 }
 ));
 export {a as __FramerMetadata__, o as init_wGSKRChAG, r as metadata, i as metadataVersion};
-//# sourceMappingURL=wGSKRChAG.BqI3UHKf.mjs.map
+//# sourceMappingURL=wGSKRChAG.CWv6D1S3.mjs.map

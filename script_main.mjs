@@ -10,7 +10,7 @@ async function I({routeId: e, pathVariables: i, localeId: a}) {
         routes: z,
         collectionUtils: V,
         framerSiteId: H,
-        notFoundPage: E( () => import(`./FdvU4kD2VnvheO652h76OmElLoZvCYUcqX3t0UDQ6Ho.hCkqgK5y.mjs`)),
+        notFoundPage: E( () => import(`./FdvU4kD2VnvheO652h76OmElLoZvCYUcqX3t0UDQ6Ho.Cb3wFDQC.mjs`)),
         isReducedMotion: void 0,
         localeId: a,
         locales: B,
@@ -196,37 +196,37 @@ e(( () => {
     z = {
         kY9xcxt8P: {
             elements: {},
-            page: E( () => import(`./lkUHZfaPrMPYzmFPMyYVfuKur2O2jHcoW6QqyyE3CnA.Bije5Rib.mjs`)),
+            page: E( () => import(`./PDsrMi01Y58y2kq1KguL0C5tS6C-A9Uu6nWHpWGODBo.DJh89hRf.mjs`)),
             path: `/`
         },
         augiA20Il: {
             elements: {},
-            page: E( () => import(`./CayEDjBvq2R7iEhZbQeqYMw7Z4PlQ4Zqh2Rc_V2WLzQ.CQ6O5hjj.mjs`)),
-            path: `/brandbook`
+            page: E( () => import(`./0pBiUvHeKcOMsGBA96HZRk9sxV77N8R7U-1NLNqoY_A.XIYSqgyi.mjs`)),
+            path: `/brand`
         },
         vE96AMUlv: {
             elements: {},
-            page: E( () => import(`./fwl1tz0hzGWvViVhd5I_GgiWkji_LTcwxlLYwHTZHis.D9wDig7H.mjs`)),
+            page: E( () => import(`./fwl1tz0hzGWvViVhd5I_GgiWkji_LTcwxlLYwHTZHis.Dx33K6_J.mjs`)),
             path: `/socials`
         },
         DlSe5474U: {
             elements: {},
-            page: E( () => import(`./Wn8mm50i61PXtbvIOiNBeSDtuVejaiPwU44WvgicPxg.BE5SUOI1.mjs`)),
+            page: E( () => import(`./Wn8mm50i61PXtbvIOiNBeSDtuVejaiPwU44WvgicPxg.DVtvaM4y.mjs`)),
             path: `/otherside`
         },
         J2X8SdeDe: {
             elements: {},
-            page: E( () => import(`./FdvU4kD2VnvheO652h76OmElLoZvCYUcqX3t0UDQ6Ho.hCkqgK5y.mjs`)),
+            page: E( () => import(`./FdvU4kD2VnvheO652h76OmElLoZvCYUcqX3t0UDQ6Ho.Cb3wFDQC.mjs`)),
             path: `/404`
         },
         vuQbse1Xg: {
             elements: {},
-            page: E( () => import(`./j0K39-o9xVzESPnwY-UUQNkGCTUQvzoKwNm_SnsQoAg.kPTjATas.mjs`)),
+            page: E( () => import(`./_ZAQHWuxcHHj8o_Cvzc6C-AJHhIz81C76Gb1DHMdBJc.CElvpk9k.mjs`)),
             path: `/answer`
         },
         wGSKRChAG: {
             elements: {},
-            page: E( () => import(`./DOLSZocbg0JZwHTL6WeUNuGuH0KasFW0O3ZBYBqRZ7A.febU5Igh.mjs`)),
+            page: E( () => import(`./DOLSZocbg0JZwHTL6WeUNuGuH0KasFW0O3ZBYBqRZ7A.qBi_C4Mv.mjs`)),
             path: `/kyoto`
         }
     },
@@ -252,4 +252,4 @@ e(( () => {
 }
 ))();
 export {I as getPageRoot};
-//# sourceMappingURL=script_main.BtkRP2C1.mjs.map
+//# sourceMappingURL=script_main.BVBfQcSe.mjs.map
